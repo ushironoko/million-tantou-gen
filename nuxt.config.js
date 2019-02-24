@@ -29,7 +29,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: '担当アイドルシートをウェブで作れるツール。' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
     ]
   },
 
