@@ -1,0 +1,54 @@
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background: #e6ecf0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container:not(.__nuxt-error-page) {
+  width: 100%;
+  margin: 0 auto;
+  min-height: calc(100vh - 61px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Element Utils */
+
+.el-card {
+  flex: 1;
+  max-width: 750px;
+  min-width: 750px;
+  margin: 5px auto;
+}
+
+@media screen and (max-width: 780px) {
+  .el-card {
+    flex: 1;
+    max-width: 375px;
+    min-width: 375px;
+    margin: 5px auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .el-card {
+    flex: 1;
+    max-width: 360px;
+    min-width: 360px;
+    margin: 5px auto;
+  }
+}
