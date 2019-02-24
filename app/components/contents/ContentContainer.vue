@@ -85,7 +85,6 @@ const idolNames = [
   'yuriko'
 ]
 
-const height = window.innerHeight
 let primaryX = 0
 
 export default {
@@ -93,7 +92,7 @@ export default {
     return {
       stageSize: {
         width: 600,
-        height: height
+        height: 840
       },
       image: null,
       idols: idolNames
@@ -113,22 +112,22 @@ export default {
       const image = new window.Image()
       const filepath = require(`@/assets/img/idols/${filename}.jpg`)
       image.src = filepath
-      image.width = 60
-      image.height = 70
+      image.width = 65
+      image.height = 75
       return image
     },
     boundaryY(i) {
-      let y = 400
+      let y = 405
       if (i >= 9) {
-        y = 470
+        y = 475
         if (i >= 18) {
-          y = 540
+          y = 545
           if (i >= 27) {
-            y = 610
+            y = 615
             if (i >= 36) {
-              y = 680
+              y = 685
               if (i >= 45) {
-                y = 750
+                y = 755
               }
             }
           }
@@ -141,7 +140,7 @@ export default {
       if (i % 9 === 0) {
         primaryX = 0
       }
-      let x = primaryX * 60
+      let x = primaryX * 65
       primaryX++
 
       return x
@@ -151,7 +150,7 @@ export default {
       let stage = this.$refs.stage.getStage()
 
       link.download = 'tantou.png'
-      link.href = stage.toDataURL({ pixelRatio: 1 , height: 370})
+      link.href = stage.toDataURL({ pixelRatio: 1 , height: 375})
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
