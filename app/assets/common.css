@@ -33,7 +33,6 @@ html {
   max-width: 643px;
   min-width: 643px;
   margin: 5px auto;
-  overflow: scroll;
 }
 
 @media screen and (max-width: 780px) {
