@@ -3,25 +3,40 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
   srcDir: 'app',
+
+   /**
+   * PWA manifests
+   */
+  manifest: {
+    name: 'ミリシタ担当アイドルシートジェネレータ',
+    short_name: 'ミリシタ担当ジェネレータ',
+    title: 'ミリシタ担当アイドルシートジェネレータ',
+    'og:title': 'ミリシタ担当アイドルシートジェネレータ',
+    description: '担当アイドルシートをウェブで作れるツール。',
+    'og:description': '担当アイドルシートをウェブで作れるツール。',
+    lang: 'ja',
+    theme_color: '#FFF',
+    background_color: '#e6ecf0'
+  },
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'ミリシタ担当アイドルシートジェネレータ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: '担当アイドルシートをウェブで作れるツール。' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#00adb8' },
 
   /*
   ** Global CSS
